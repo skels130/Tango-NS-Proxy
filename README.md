@@ -24,5 +24,21 @@ sudo apt update
 sudo apt install kamailio kamailio-mysql-modules kamailio-tls-modules kamailio-utils-modules
 ```
 2. Configure this git repo, or copy config to existing file:
+```
+rm -rf /etc/kamailio
+mkdir /etc/kamailio
+git clone git@github.com:skels130/Tango-NS-Proxy.git /etc/kamailio/
+```
+3. Make kamailio-local.cfg
+```
+touch /etc/kamailio-local.cfg
+```
+Edit /etc/kamailio-local.cfg with the following lines, putting in your server information where needed for *IP ADDRESS* and *FQDN*. You can also change the ports as desired. 
+```
+listen=tcp:*IP ADDRESS*:5060;
+listen=udp:*IP ADDRESS*:5060;
+# listen=tcp:*IP ADDRESS*:8080; # can be used for JSONRPC to control kamailio with additional config
+# listen=tls:*IP ADDRESS*:8081; # can be used for JSONRPC to control kamailio with additional config
+alias="*FQDN*";
 
-
+```
