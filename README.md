@@ -27,7 +27,7 @@ sudo apt install kamailio kamailio-mysql-modules kamailio-tls-modules kamailio-u
 ```
 rm -rf /etc/kamailio
 mkdir /etc/kamailio
-git clone git@github.com:skels130/Tango-NS-Proxy.git /etc/kamailio/
+git clone https://github.com/skels130/Tango-NS-Proxy.git /etc/kamailio/
 ```
 3. Make kamailio-local.cfg
 ```
