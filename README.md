@@ -33,7 +33,7 @@ git clone https://github.com/skels130/Tango-NS-Proxy.git /etc/kamailio/
 ```
 touch /etc/kamailio-local.cfg
 ```
-Edit /etc/kamailio-local.cfg with the following lines, putting in your server information where needed for *IP ADDRESS* and *FQDN*. You can also change the ports as desired. 
+Edit /etc/kamailio/kamailio-local.cfg with the following lines, putting in your server information where needed for *IP ADDRESS* and *FQDN*. You can also change the ports as desired. 
 ```
 listen=tcp:*IP ADDRESS*:5060;
 listen=udp:*IP ADDRESS*:5060;
