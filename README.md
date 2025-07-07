@@ -1,3 +1,10 @@
+#Update:
+Tango has recently been reaching out to NS providers and moving them to a new server configuration that is supposed to mitigate this issue. At this time, I'm not planning on working on this anymore, as it seem to no longer be needed. 
+
+
+
+
+
 # Tango-NS-Proxy
 A Proxy to sit between Netsapiens servers and Tango's Mobile-X servers to fix contact IP issues.
 
